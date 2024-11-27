@@ -1,7 +1,17 @@
 from flask import Flask, request, jsonify
 from routes import register_routes
+from services import check_dependencies
 import os
+import sys
 import logging
+
+# Verificar dependencias antes de iniciar la aplicación
+success, missing_dependencies = check_dependencies()
+if not success:
+    print("Faltan las siguientes dependencias para ejecutar la aplicación:")
+    for dep in missing_dependencies:
+        print(f" - {dep}")
+    sys.exit(1)  # Terminar la aplicación si faltan dependencias
 
 # Configuración del archivo de logs
 log_path = "../logs/audit_logs.log"  # Ubicación de los logs fuera de src

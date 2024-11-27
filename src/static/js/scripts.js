@@ -35,9 +35,9 @@ document.addEventListener("DOMContentLoaded", () => {
             const response = await fetch(url, {
                 method: "POST",
                 headers: {
-                    "Content-Type": "application/x-www-form-urlencoded",
+                    "Content-Type": "application/json", // Cambiado a JSON para mayor consistencia
                 },
-                body: new URLSearchParams(data),
+                body: JSON.stringify(data),
             });
             return await response.json();
         } catch (error) {
@@ -102,34 +102,74 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
+    // Función para capturar handshake
+    async function captureHandshake() {
+        const interface = interfaceSelect.value;
+        const bssid = document.getElementById("bssid").value;
+        const channel = document.getElementById("channel").value;
+
+        if (!interface || !bssid || !channel) {
+            handleError("Todos los campos son obligatorios para capturar el handshake.");
+            return;
+        }
+
+        const data = {
+            interface,
+            bssid,
+            channel,
+        };
+
+        const response = await postRequest("/capture_handshake", data);
+        if (response) {
+            resultDiv.innerHTML = `<pre>${JSON.stringify(response, null, 2)}</pre>`;
+        }
+    }
+
     // Manejar el botón para escanear redes
     document.getElementById("scanNetworksButton").addEventListener("click", scanNetworks);
+
+    // Manejar el botón para captura de handshake
+    document.getElementById("captureHandshakeButton").addEventListener("click", captureHandshake);
 
     // Manejar el botón para ataque de desautenticación
     document.getElementById("deauthAttackButton").addEventListener("click", async () => {
         const interface = interfaceSelect.value;
+
+        // Validar que se seleccione una interfaz
         if (!interface) {
-            handleError("Interfaz no proporcionada.");
+            handleError("Interfaz no proporcionada. Seleccione una interfaz antes de continuar.");
             return;
         }
 
+        // Pedir el BSSID del AP
         const bssid = prompt("Ingrese el BSSID del AP:");
         if (!bssid) {
             handleError("BSSID no proporcionado.");
             return;
         }
 
+        // Pedir la dirección MAC del cliente (opcional)
         const client_mac = prompt("Ingrese la MAC del cliente (opcional):");
 
+        // Crear el cuerpo de la solicitud
         const data = {
             interface,
             bssid,
-            client_mac,
+            client_mac: client_mac || null, // Asegurarse de que sea null si no se proporciona
         };
 
+        // Enviar la solicitud al servidor
         const response = await postRequest("/deauth_attack", data);
+
+        // Manejar la respuesta del servidor
         if (response) {
-            resultDiv.innerHTML = `<pre>${JSON.stringify(response, null, 2)}</pre>`;
+            if (response.error) {
+                handleError(response.error);
+            } else {
+                resultDiv.innerHTML = `<pre>${JSON.stringify(response, null, 2)}</pre>`;
+        }
+        } else {
+            handleError("Error al comunicarse con el servidor.");
         }
     });
 });
