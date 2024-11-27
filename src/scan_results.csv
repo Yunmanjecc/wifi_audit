@@ -1,0 +1,28 @@
+SSID,BSSID,Canal,Encriptación
+Cris,7C:DB:98:06:1B:AB,2.412 GHz (Channel 1),on
+El Roble,44:48:B9:10:B1:20,2.412 GHz (Channel 1),on
+LUNA,58:AF:F1:90:0B:48,2.412 GHz (Channel 1),on
+LEANDRO,E4:AB:89:09:27:98,2.412 GHz (Channel 1),on
+Pamela2.4,00:02:71:B9:AE:10,2.412 GHz (Channel 1),on
+Wifi_MAPF,E8:01:8D:48:CB:C8,2.427 GHz (Channel 4),on
+2daZona_2.4,80:3F:5D:C6:D1:58,2.437 GHz (Channel 6),on
+Pukuy 2.4G,58:AF:F1:94:3E:90,2.437 GHz (Channel 6),on
+Familia Puga 2.4G,EC:E7:A2:89:1A:C0,2.437 GHz (Channel 6),on
+Wifi_SWVUAZDNE3,06:78:63:BA:E8:08,2.437 GHz (Channel 6),on
+El Roble,74:93:DA:6F:71:AF,2.437 GHz (Channel 6),on
+Maigus,CC:B1:71:01:C7:48,2.447 GHz (Channel 8),on
+Lucy_2.4,F4:70:ED:61:3D:20,2.462 GHz (Channel 11),on
+Familia H&V,74:93:DA:C4:70:2F,2.462 GHz (Channel 11),on
+Elias,58:AF:F1:55:15:88,2.462 GHz (Channel 11),on
+Bayona,10:08:1D:38:B0:28,2.472 GHz (Channel 13),on
+PABLO,CC:B1:71:BC:39:A0,2.472 GHz (Channel 13),on
+Pamela5g,00:02:71:B9:AE:0F,161,on
+Lucy_5G,F4:70:ED:61:3D:24,5.66 GHz (Channel 132),on
+Pukuy 5G,58:AF:F1:94:3E:94,5.6 GHz (Channel 120),on
+Familia Puga 5G,EC:E7:A2:89:1A:C4,5.58 GHz (Channel 116),on
+Familia H&V,74:93:DA:C4:70:2E,5.5 GHz (Channel 100),on
+,76:93:DA:B4:70:2E,5.5 GHz (Channel 100),on
+DNRT_5G,90:55:DE:5D:E0:DC,5.26 GHz (Channel 52),on
+Maigus,CC:B1:71:01:C7:50,5.2 GHz (Channel 40),on
+Cris 5G,7C:DB:98:06:1B:B8,5.2 GHz (Channel 40),on
+Cris,66:DB:98:06:1B:B8,5.2 GHz (Channel 40),on

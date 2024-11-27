@@ -1,0 +1,191 @@
+[
+    {
+        "BSSID": "7C:DB:98:06:1B:AB",
+        "Channel": "2.412 GHz (Channel 1)",
+        "Quality": "30/70",
+        "Encryption": "on",
+        "SSID": "Cris"
+    },
+    {
+        "BSSID": "44:48:B9:10:B1:20",
+        "Channel": "2.412 GHz (Channel 1)",
+        "Quality": "36/70",
+        "Encryption": "on",
+        "SSID": "El Roble"
+    },
+    {
+        "BSSID": "58:AF:F1:90:0B:48",
+        "Channel": "2.412 GHz (Channel 1)",
+        "Quality": "24/70",
+        "Encryption": "on",
+        "SSID": "LUNA"
+    },
+    {
+        "BSSID": "E4:AB:89:09:27:98",
+        "Channel": "2.412 GHz (Channel 1)",
+        "Quality": "20/70",
+        "Encryption": "on",
+        "SSID": "LEANDRO"
+    },
+    {
+        "BSSID": "00:02:71:B9:AE:10",
+        "Channel": "2.412 GHz (Channel 1)",
+        "Quality": "31/70",
+        "Encryption": "on",
+        "SSID": "Pamela2.4"
+    },
+    {
+        "BSSID": "E8:01:8D:48:CB:C8",
+        "Channel": "2.427 GHz (Channel 4)",
+        "Quality": "30/70",
+        "Encryption": "on",
+        "SSID": "Wifi_MAPF"
+    },
+    {
+        "BSSID": "80:3F:5D:C6:D1:58",
+        "Channel": "2.437 GHz (Channel 6)",
+        "Quality": "26/70",
+        "Encryption": "on",
+        "SSID": "2daZona_2.4"
+    },
+    {
+        "BSSID": "58:AF:F1:94:3E:90",
+        "Channel": "2.437 GHz (Channel 6)",
+        "Quality": "46/70",
+        "Encryption": "on",
+        "SSID": "Pukuy 2.4G"
+    },
+    {
+        "BSSID": "EC:E7:A2:89:1A:C0",
+        "Channel": "2.437 GHz (Channel 6)",
+        "Quality": "41/70",
+        "Encryption": "on",
+        "SSID": "Familia Puga 2.4G"
+    },
+    {
+        "BSSID": "06:78:63:BA:E8:08",
+        "Channel": "2.437 GHz (Channel 6)",
+        "Quality": "18/70",
+        "Encryption": "on",
+        "SSID": "Wifi_SWVUAZDNE3"
+    },
+    {
+        "BSSID": "74:93:DA:6F:71:AF",
+        "Channel": "2.437 GHz (Channel 6)",
+        "Quality": "23/70",
+        "Encryption": "on",
+        "SSID": "El Roble"
+    },
+    {
+        "BSSID": "CC:B1:71:01:C7:48",
+        "Channel": "2.447 GHz (Channel 8)",
+        "Quality": "37/70",
+        "Encryption": "on",
+        "SSID": "Maigus"
+    },
+    {
+        "BSSID": "F4:70:ED:61:3D:20",
+        "Channel": "2.462 GHz (Channel 11)",
+        "Quality": "28/70",
+        "Encryption": "on",
+        "SSID": "Lucy_2.4"
+    },
+    {
+        "BSSID": "74:93:DA:C4:70:2F",
+        "Channel": "2.462 GHz (Channel 11)",
+        "Quality": "70/70",
+        "Encryption": "on",
+        "SSID": "Familia H&V"
+    },
+    {
+        "BSSID": "58:AF:F1:55:15:88",
+        "Channel": "2.462 GHz (Channel 11)",
+        "Quality": "22/70",
+        "Encryption": "on",
+        "SSID": "Elias"
+    },
+    {
+        "BSSID": "10:08:1D:38:B0:28",
+        "Channel": "2.472 GHz (Channel 13)",
+        "Quality": "21/70",
+        "Encryption": "on",
+        "SSID": "Bayona"
+    },
+    {
+        "BSSID": "CC:B1:71:BC:39:A0",
+        "Channel": "2.472 GHz (Channel 13)",
+        "Quality": "23/70",
+        "Encryption": "on",
+        "SSID": "PABLO"
+    },
+    {
+        "BSSID": "00:02:71:B9:AE:0F",
+        "Channel": "161",
+        "Quality": "23/70",
+        "Encryption": "on",
+        "SSID": "Pamela5g"
+    },
+    {
+        "BSSID": "F4:70:ED:61:3D:24",
+        "Channel": "5.66 GHz (Channel 132)",
+        "Quality": "21/70",
+        "Encryption": "on",
+        "SSID": "Lucy_5G"
+    },
+    {
+        "BSSID": "58:AF:F1:94:3E:94",
+        "Channel": "5.6 GHz (Channel 120)",
+        "Quality": "35/70",
+        "Encryption": "on",
+        "SSID": "Pukuy 5G"
+    },
+    {
+        "BSSID": "EC:E7:A2:89:1A:C4",
+        "Channel": "5.58 GHz (Channel 116)",
+        "Quality": "21/70",
+        "Encryption": "on",
+        "SSID": "Familia Puga 5G"
+    },
+    {
+        "BSSID": "74:93:DA:C4:70:2E",
+        "Channel": "5.5 GHz (Channel 100)",
+        "Quality": "70/70",
+        "Encryption": "on",
+        "SSID": "Familia H&V"
+    },
+    {
+        "BSSID": "76:93:DA:B4:70:2E",
+        "Channel": "5.5 GHz (Channel 100)",
+        "Quality": "70/70",
+        "Encryption": "on",
+        "SSID": ""
+    },
+    {
+        "BSSID": "90:55:DE:5D:E0:DC",
+        "Channel": "5.26 GHz (Channel 52)",
+        "Quality": "21/70",
+        "Encryption": "on",
+        "SSID": "DNRT_5G"
+    },
+    {
+        "BSSID": "CC:B1:71:01:C7:50",
+        "Channel": "5.2 GHz (Channel 40)",
+        "Quality": "26/70",
+        "Encryption": "on",
+        "SSID": "Maigus"
+    },
+    {
+        "BSSID": "7C:DB:98:06:1B:B8",
+        "Channel": "5.2 GHz (Channel 40)",
+        "Quality": "34/70",
+        "Encryption": "on",
+        "SSID": "Cris 5G"
+    },
+    {
+        "BSSID": "66:DB:98:06:1B:B8",
+        "Channel": "5.2 GHz (Channel 40)",
+        "Quality": "34/70",
+        "Encryption": "on",
+        "SSID": "Cris"
+    }
+]
