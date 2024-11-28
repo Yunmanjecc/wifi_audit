@@ -151,3 +151,25 @@ def register_routes(app):
         except Exception as e:
             logging.error(f"Error en /capture_handshake: {e}")
             return jsonify({"error": "Error al capturar el handshake"}), 500
+        
+    @app.route("/execute_command", methods=["POST"])
+    def execute_command_route():
+        """Ejecuta un comando recibido desde el cliente."""
+        data = request.get_json()
+        command = data.get("command")
+
+        if not command:
+            return jsonify({"error": "No se recibió un comando válido."}), 400
+        try:
+            # Ejecutar el comando utilizando subprocess
+            result = subprocess.run(
+                command.split(), capture_output=True, text=True, check=True
+            )
+            return jsonify({"output": result.stdout.strip()}), 200
+        except subprocess.CalledProcessError as e:
+            return jsonify({"error": e.stderr.strip()}), 500
+        
+    @app.route("/cli", methods=["GET"])
+    def cli():
+        """Ruta para la interfaz CLI."""
+        return render_template("cli.html")

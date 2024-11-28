@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLI - WiFi Audit</title>
+    <script src="{{ url_for('static', filename='js/cli.js') }}" defer></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Interfaz CLI - WiFi Audit</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Ejecutar Comandos</h2>
+            <div class="cli-container">
+                <div class="suggestions">
+                    <h3>Comandos Sugeridos</h3>
+                    <ul id="commandSuggestions">
+                        <li>iwconfig</li>
+                        <li>sudo airmon-ng start (interfaz)</li>
+                        <li>sudo airodump-ng (interfaz)</li>
+                        <li>sudo airodump-ng -c (canal) --bssid (bssid) -w captura (interfaz)</li>
+                        <li>sudo aircrack-ng -w /home/kali/Desktop/diccionario.txt -b (bssid) captura-01.cap</li>
+                    </ul>
+                </div>
+                <div class="cli">
+                    <label for="cliCommand">Ingresa un comando:</label>
+                    <input type="text" id="cliCommand" placeholder="Ejemplo: iwconfig">
+                    <button id="executeCommand">Ejecutar</button>
+                </div>
+                <div id="cliOutput" class="output">
+                    <h3>Salida</h3>
+                    <pre></pre>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 WiFi Audit Tool</p>
+    </footer>
+</body>
+</html>

@@ -183,3 +183,34 @@ footer {
         font-size: 14px;
     }
 }
+.cli-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.suggestions ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.suggestions li {
+    margin: 5px 0;
+}
+
+.cli {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cli input {
+    flex: 1;
+    padding: 8px;
+}
+
+.output {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
